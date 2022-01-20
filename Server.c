@@ -10,7 +10,15 @@
 #include <arpa/inet.h> //inet_addr
 
 int main(void)
-{
+{ 
+        int socket_desc;
+        struct sockaddr_in server_addr;
+        char server_message[2000], client_message[2000];
+        
+        //Cleaning the Buffers
+        
+        memset(server_message,'\0',sizeof(server_message));
+        memset(client_message,'\0',sizeof(client_message));
         
         
         return 0;
